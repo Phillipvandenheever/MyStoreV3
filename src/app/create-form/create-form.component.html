@@ -1,0 +1,35 @@
+<form #form="ngForm"
+      (ngSubmit)="submitForm()">
+       <p class="description"><strong>Full Name:</strong></p>
+       <input type="text"
+              name="title"
+              placeholder="(minimum 3 charachters)"
+              [(ngModel)]="title"
+              required
+              minlength="3"
+              maxlength="8">
+
+       <p class="mt-3 description"><strong>Address:</strong></p>
+       <textarea name="body"
+                 placeholder="(minimum 16 characters)"
+                 [(ngModel)]="body"
+                 required
+                 minlength="16">
+       </textarea>
+       <p class="mt-2 description"><strong>Credit Card Number:</strong></p>
+       <input type="number"
+              name="creditCard"
+              placeholder="(16-digit number)"
+              [(ngModel)]="creditCard"
+              required
+              min="1111111111111111"
+              max="9999999999999999">
+       <h6 class="mt-2 disclaimer">We will never share your card details with anyone else</h6>
+       <br>
+
+       <a routerLink="/confirmation">
+              <input type="submit"
+                     [disabled]="form.invalid"
+                     value="Submit"
+                     class="btn btn-primary mt-3 button-special"></a>
+</form>

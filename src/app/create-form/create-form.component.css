@@ -1,0 +1,29 @@
+.description {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+input {
+    width: 500px;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+textarea {
+    width: 500px;
+    height: 150px;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.button-special {
+    width: 200px;
+    font-size: 1rem;
+    height: 45px;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    font-weight: 400;
+}

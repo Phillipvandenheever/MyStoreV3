@@ -1,0 +1,83 @@
+img {
+    width: 320px;
+    outline-offset: solid 1px black;
+    cursor: pointer;
+    border-radius: 0.5%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 2%;
+}
+
+img:hover {
+    width: 320px;
+    outline-offset: solid 1px black;
+    cursor: pointer;
+    border-radius: 0.5%;
+    transform: scale(1.03);
+    transition: all .3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 2%;
+}
+
+.margins {
+    margin: 80px 100px 80px 100px
+}
+
+.productName {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.box {
+    margin: auto;
+    outline: solid 1px rgba(167, 167, 167, 0.37);
+    outline-offset: 10px;
+}
+
+.button-special {
+    width: 200px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    height: 55px;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.button-special:hover {
+    width: 200px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    height: 55px;
+    background-color: rgb(0, 0, 0) !important;
+    transform: scale(1.03);
+}
+
+.bi-cart2 {
+    vertical-align: top;
+}
+
+.bi-bag-plus {
+    vertical-align: top;
+}
+
+.bi-dash-square {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.bi-plus-square {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.increase {
+    background: none;
+    border: none;
+}
+
+.decrease {
+    background: none;
+    border: none;
+}
+
+p {
+    font-size: 1.2rem;
+}

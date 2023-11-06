@@ -1,0 +1,70 @@
+img {
+    width: 400px;
+    outline-offset: solid 1px black;
+    cursor: pointer;
+    border-radius: 0.5%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 2%;
+}
+
+.detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.productName {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.box {
+    margin-top: 80px;
+}
+
+.productPrice,
+.productDescription,
+.productQuantity,
+.back {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.increase {
+    background: none;
+    border: none;
+}
+
+.decrease {
+    background: none;
+    border: none;
+}
+
+.button-special {
+    width: 200px;
+    margin-top: 30px;
+    font-size: 1.3rem;
+    height: 55px;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.bi-dash-square {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.bi-plus-square {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.bi-cart2 {
+    vertical-align: top;
+}
+
+.back {
+    background: none;
+    border: none;
+}

@@ -1,0 +1,75 @@
+<div class="container text-center detail-container">
+    <div class="row">
+        <div class="col">
+            <img src="{{userInfo.url}}">
+        </div>
+        <div class="col mx-5 box">
+            <p class="productName">{{userInfo.name}}</p>
+            <p class="productPrice">${{userInfo.price}}</p>
+            <p class="productDescription">{{userInfo.description}}</p>
+            <p class="productQuantity mt-4">{{userInfo.quantity}}
+                <button (click)="increase(userInfo)"
+                        class="increase">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="35"
+                             height="35"
+                             fill="#198754"
+                             class="bi bi-plus-square-fill"
+                             viewBox="0 0 16 16">
+                            <path
+                                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z" />
+                        </svg>
+                    </span>
+                </button>
+                <button (click)="decrease(userInfo)"
+                        class="decrease">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="35"
+                             height="35"
+                             fill="#dc3545"
+                             class="bi bi-dash-square-fill"
+                             viewBox="0 0 16 16">
+                            <path
+                                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm2.5 7.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1z" />
+                        </svg>
+                    </span>
+                </button>
+            <div>
+                <a (click)="addToCart(userInfo)">
+                    <button type="button"
+                            class="btn btn-dark button-special">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="25"
+                             height="25"
+                             fill="#fff"
+                             class="bi bi-cart2"
+                             viewBox="0 0 16 16">
+                            <path
+                                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg> Add to Cart
+                    </button>
+                </a>
+            </div>
+            <a class="px-2"
+               routerLink="/">
+                <button class="back">
+                    <p class="back mt-5">
+                        <span class="px-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 width="30"
+                                 height="30"
+                                 fill="currentColor"
+                                 class="bi bi-arrow-left-circle-fill"
+                                 viewBox="0 0 16 16">
+                                <path
+                                      d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                            </svg>
+                        </span>back to Product List
+                    </p>
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
